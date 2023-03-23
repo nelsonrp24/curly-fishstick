@@ -1,0 +1,29 @@
+name: Ali
+age: 28
+address: "dwgui: iiodfdf"
+active: true
+key:
+    key: value
+    key2: value
+    key3:
+        key: value
+        key2: value
+array:
+    - item1
+    - item2
+    - {key: value, key2: value2}
+
+objectsArray:
+  - key: value
+    key11: value11
+  - key2: value2
+    key22: value22
+
+
+longText: >
+    kdfjañsdkfjañsdkfja
+    añdslkfjaslñdkfjañskld
+    alñskdjfalskdfj
+    añlsdkfjalsñkdfjañlsdkfjalsasñdlkfjañskld
+    alñksdfjañskdjfalskdfj
+    
