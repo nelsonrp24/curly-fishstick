@@ -8,7 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: echo a string
-            run: ecxho "Hello work flows"
+            run: echo "Hello work flows"
           - name: multiline script
             run: |
               node -v
