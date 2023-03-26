@@ -1,7 +1,19 @@
 name: Actions Workflow
 
 on: 
-  #push:
+#push:
+  #branches-ignored:
+  #branches:
+    #- master
+    #- 'feature/*' does not match feature/feat/a
+    #- 'feature/**' any.
+    #- '!feature/featC' #Exclude this branch
+  # tags:
+  # tags-ingnore:
+  # paths:
+      #- '**.js'
+  # paths-ignore:
+    # - 'docs/**' 
 #schedule:
 #  - cron: "*/5 * * * *"
 
