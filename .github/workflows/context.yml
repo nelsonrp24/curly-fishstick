@@ -3,7 +3,7 @@ name: Context
 on: push
 
 jobs:
-  one:
+  contextJob:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub Context
