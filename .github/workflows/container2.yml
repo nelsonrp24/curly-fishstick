@@ -17,7 +17,7 @@ jobs:
           args: 'Hello World...!!'
 
       - name: Log node version inside docker container
-        uses: docker://node:12.14.1-apline3.10
+        uses: docker://node:12.14.1-alpine3.10
         with: 
           entrypoint: /usr/local/bin/node
           args: -v
