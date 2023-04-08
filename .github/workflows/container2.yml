@@ -30,11 +30,17 @@ jobs:
           entrypoint: ./script.sh
           args: "Some Sring as argument"
 
+      - name: Generte random variable value
+        run: |
+          RANDOM=`date | base64`
+          echo "RANDOM=$RANDOM"
+          echo "RANDOM=$RANDOM" >> $GITHUB_ENV
+
       - name: Send Slack Message
         uses: docker://technosophos/slack-notify
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: "Hello Salck"
+          SLACK_MESSAGE: "Hello Salck: ${{ env.RANDOM }}"
 
   node-docker:
     runs-on: ubuntu-latest
